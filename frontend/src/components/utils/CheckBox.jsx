@@ -1,5 +1,5 @@
 import React from 'react'
-import './CheckBox.css'
+import '../styles/CheckBox.css'
 
 const CheckBox = ({lan,change,setValue}) => {
   return (

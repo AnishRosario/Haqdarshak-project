@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import './Lanpage.css'
-import Body from '../src/components/body/Body'
-import ContentCon from '../src/components/contentCon/ContentCon'
-import Text from '../src/components/body/text/text'
-import CheckBox from '../src/components/checkBox/CheckBox'
-import Button from '../src/components/button/Button'
+import './styles/Lanpage.css'
+import Body from '../components/utils/Body'
+import ContentCon from '../components/utils/ContentCon'
+import Text from '../components/utils/text'
+import CheckBox from '../components/utils/CheckBox'
+import Button from '../components/utils/Button'
 
 
 // const Lanpage = () => {

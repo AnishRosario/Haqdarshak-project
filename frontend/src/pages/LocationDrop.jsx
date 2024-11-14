@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import Body from '../src/components/body/Body'
-import ContentCon from '../src/components/contentCon/ContentCon'
-import Text from '../src/components/body/text/text'
-import Dropdown from '../src/components/Dropdown/Dropdown'
-import Input from '../src/components/inputs/Input'
-import Button from '../src/components/button/Button'
+import Body from '../components/utils/Body'
+import ContentCon from '../components/utils/ContentCon'
+import Text from '../components/utils/Text'
+import Dropdown from '../components/utils/Dropdown'
+import Input from '../components/utils/Input'
+import Button from '../components/utils/Button'
 import{Country, State,City}from 'country-state-city'
 
 const LocationDrop = ({onPrev}) => {

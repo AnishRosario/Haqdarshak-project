@@ -1,5 +1,5 @@
 import React from 'react'
-import './language.css'
+import '../styles/language.css'
 import { IoIosArrowRoundBack } from "react-icons/io";
 
 const Language = () => {

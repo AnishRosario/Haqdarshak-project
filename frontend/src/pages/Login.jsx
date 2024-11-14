@@ -1,10 +1,10 @@
 import React from 'react';
-import Body from '../src/components/body/Body';
-import Text from '../src/components/body/text/text';
-import ContentCon from '../src/components/contentCon/ContentCon';
-import CheckBox from '../src/components/checkBox/CheckBox';
-import Button from '../src/components/button/Button';
-import './Login.css';
+import Body from '../components/utils/Body';
+import Text from '../components/utils/Text';
+import ContentCon from '../components/utils/ContentCon';
+import CheckBox from '../components/utils/CheckBox';
+import Button from '../components/utils/Button';
+import './styles/Login.css';
 
 const Login = ({ onNext, onPrev }) => {
   return (

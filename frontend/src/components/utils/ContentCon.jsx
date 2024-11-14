@@ -1,5 +1,5 @@
 import React from 'react'
-import './ContentCon.css'
+import '../styles/ContentCon.css'
 
 const ContentCon = ({children}) => {
   return (

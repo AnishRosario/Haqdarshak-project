@@ -1,10 +1,10 @@
 import React from 'react'
-import './Mobile.css'
-import Body from '../src/components/body/Body'
-import Text from '../src/components/body/text/text'
-import ContentCon from '../src/components/contentCon/ContentCon'
-import Input from '../src/components/inputs/Input'
-import Button from '../src/components/button/Button'
+import './styles/Mobile.css'
+import Body from '../components/utils/Body'
+import Text from '../components/utils/Text'
+import ContentCon from '../components/utils/ContentCon'
+import Input from '../components/utils/Input'
+import Button from '../components/utils/Button'
 
 const Mobile = ({onNext,onPrev}) => {
   return (

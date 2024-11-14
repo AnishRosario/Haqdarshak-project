@@ -1,8 +1,8 @@
 
-import Lanpage from '../pages/Lanpage'
-import LocationDrop from '../pages/LocationDrop'
-import Login from '../pages/login'
-import Mobile from '../pages/Mobile'
+import Lanpage from './pages/Lanpage'
+import LocationDrop from './pages/LocationDrop'
+import Login from './pages/login'
+import Mobile from './pages/Mobile'
 import './App.css'
 import { useState } from 'react'
 

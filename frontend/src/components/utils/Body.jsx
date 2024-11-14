@@ -1,5 +1,5 @@
 import React from 'react';
-import './Body.css';
+import '../styles/Body.css';
 import { IoIosArrowRoundBack } from "react-icons/io";
 
 const Body = ({children,onPrev}) => {

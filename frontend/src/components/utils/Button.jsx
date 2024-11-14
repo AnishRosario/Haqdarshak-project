@@ -14,7 +14,7 @@
 // export default Button
 
 import React from 'react';
-import './Button.css';
+import '../styles/Button.css';
 
 const Button = ({ onClick, text }) => {
   return (

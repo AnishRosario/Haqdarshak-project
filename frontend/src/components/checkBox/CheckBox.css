@@ -1,0 +1,18 @@
+.input-fields{
+    display: flex;
+    width: 296px;
+    height: 72px;
+    background: #E5E2DE;
+    padding: 8px 16px;
+    border-radius: 20px;
+    align-items: center;
+    gap: 10px;
+}
+.input-fields input[type="radio"] {
+    transform: scale(1.5);
+    margin: 5px;
+}
+.input-fields label{
+    font-size: 16px;
+    font-weight: 400;
+}

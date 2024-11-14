@@ -1,0 +1,21 @@
+.input-field {
+    width: 296px;
+    height: 72px;
+    background: #E5E2DE;
+    /* padding: 8px 16px; */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-field input{
+    width: 296px;
+    /* padding: 8px 16px; */
+    border-radius: 20px;
+    height: 72px;
+    border: none;
+    background-color: #E5E2DE;   
+}
+.input-field input{
+    margin-left: 15px;
+}

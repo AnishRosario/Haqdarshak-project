@@ -1,0 +1,13 @@
+.dropdown-field{
+    width: 296px;
+    height: 72px;
+    background: #E5E2DE;
+    /* padding: 8px 16px; */
+    border-radius: 20px;
+}
+.dropdown-field select{
+    width: 296px;
+    height: 72px;
+    background-color: #E5E2DE;
+    border-radius: 20px;
+}

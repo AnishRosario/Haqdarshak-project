@@ -1,0 +1,87 @@
+.con{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 360px;
+    background: #4F285E;
+    height: 100vh;
+    border-radius: 10px;
+}
+.back-con{
+    background-color: white;
+    width: 56px;
+    height: 40px;
+    margin:25px 0px 0 15px;
+    border-radius: 15px;
+}
+.back-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    display: flex;
+    width: 100%;
+    margin:15px 1px;
+}
+.text h1{
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+.body-card{
+    background: #F3F1EF;
+    width: 100%;
+    height: 100vh;
+    margin-top: 55px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.card-top{
+    width: 296px;
+    height: 328px;
+    margin-top: 45px;
+}
+.cardselect-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* above this are common */
+
+.checkbox-con{
+    display: flex;
+    width: 296px;
+    height: 72px;
+    background: #E5E2DE;
+    border-radius: 20px;
+    align-items: center;
+    gap: 10px;
+}
+.checkbox-con input{
+    margin-left: 10px;
+}
+.checkbox-con label{
+    font-size: 16px;
+    font-weight: 400;
+}
+.card-next-btn{
+    
+
+}
+.card-next-btn button{
+    width: 296px;
+    height: 64px;
+    background: #4F285E;
+    color: white;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}

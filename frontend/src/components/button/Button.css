@@ -1,0 +1,9 @@
+.btn button{
+    width: 296px;
+    height: 64px;
+    background: #4F285E;
+    color: white;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}

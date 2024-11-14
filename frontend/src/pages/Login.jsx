@@ -20,7 +20,7 @@ const Login = ({ onNext, onPrev }) => {
             </div>
           </div>
           <div className="lanpage-btn">
-            <Button text="Next" onClick={onNext} />
+            <Button text="Next" onClick={onNext} link={"/login"}/>
           </div>
         </ContentCon>
       </Body>

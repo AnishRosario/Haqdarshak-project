@@ -5,6 +5,7 @@ import Login from './pages/login'
 import Mobile from './pages/Mobile'
 import './App.css'
 import { useState } from 'react'
+import {BrowserRouter} from 'react-router-dom'
 
 
 function App() {
@@ -21,13 +22,15 @@ function App() {
     <Lanpage onNext={nextStep} />,
     <Login onNext={nextStep} onPrev={beforeStep}/>,
     <Mobile onNext={nextStep} onPrev={beforeStep} />,
-    <LocationDrop onNext={nextStep} onPrev={beforeStep}  />
+    <LocationDrop onNext={nextStep} onPrev={beforeStep}  />,
+    <Map/>
   ];
 
   return (
   <>{
     steps[currentStep]
-    }</>
+    }
+    </>
   );
 }
 

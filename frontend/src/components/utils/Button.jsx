@@ -1,22 +1,10 @@
-// import React from 'react'
-// import './Button.css'
 
-// const Button = ({ onClick, text }) => {
-//   return (
-//     <div className='btn-container'>
-//         <div className="btn">
-//             <button onClick={onClick}>{text}</button>
-//         </div>
-//     </div>
-//   )
-// }
-
-// export default Button
 
 import React from 'react';
 import '../styles/Button.css';
+import { Link } from 'react-router-dom';
 
-const Button = ({ onClick, text }) => {
+const Button = ({ onClick, text,link }) => {
   return (
         <div className='btn-container'>
   <div className="btn">

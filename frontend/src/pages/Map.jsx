@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import 'dot-env'
 
 const MapScreen = () => {
   const [markerPosition, setMarkerPosition] = useState({
@@ -31,7 +32,7 @@ const MapScreen = () => {
 
   return (
     <div style={{ position: "relative" }}>
-      <LoadScript googleMapsApiKey="AIzaSyA0d8ACFt_EWtiUopbbc_9LFStwE_Klvlk">
+      <LoadScript googleMapsApiKey={process.env.api_key}>
         <GoogleMap
           mapContainerStyle={containerStyle}
           center={center}

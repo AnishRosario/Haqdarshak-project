@@ -1,0 +1,33 @@
+.name-manage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    margin-top: 30px;
+    padding-top:20px ;
+}
+.gen-manage{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.radio-manage{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.dob-manage{
+    display:  flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.content{
+    height: 70vh;
+    margin-top: 10px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}

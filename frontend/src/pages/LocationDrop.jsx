@@ -6,8 +6,17 @@ import Dropdown from '../components/utils/Dropdown'
 import Input from '../components/utils/Input'
 import Button from '../components/utils/Button'
 import{Country, State,City}from 'country-state-city'
+import { useNavigate } from 'react-router-dom'
 
-const LocationDrop = ({onPrev}) => {
+const LocationDrop = ({onNext,onPrev}) => {
+
+      const changeNext=()=>{
+        navigate('/otp')
+      }
+      const navigate=useNavigate();
+      const changeBack=()=>{
+        navigate('/login')
+      }
     
     const [states, setStates] = useState([]);
     const [selectedState, setSelectedState] = useState("");
@@ -28,7 +37,7 @@ const LocationDrop = ({onPrev}) => {
       };
   return (
     <div>
-        <Body onPrev={onPrev}>
+        <Body onPrev={changeBack}>
             <Text text={"Where are you from?"}/>
             <ContentCon>
                 <div className="content-section">
@@ -39,7 +48,7 @@ const LocationDrop = ({onPrev}) => {
                 </div>
                 </div>
                 <div className="lanpage-btn">
-                <Button text={"Next"}/>
+                <Button text={"Next"} onClick={changeNext}/>
               </div>
             </ContentCon>
         </Body>

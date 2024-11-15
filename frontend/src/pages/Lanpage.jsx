@@ -5,34 +5,15 @@ import ContentCon from '../components/utils/ContentCon'
 import Text from '../components/utils/text'
 import CheckBox from '../components/utils/CheckBox'
 import Button from '../components/utils/Button'
+import { useNavigate } from 'react-router-dom'
 
-
-// const Lanpage = () => {
-//   return (
-//     <div>
-//         <Body>
-//             <Text text={"Which language do you prefer"}/>
-//             <ContentCon>
-//               <div className="content-section">
-//               <div className="card-content">
-//               <CheckBox lan={"English"}/>
-//               <CheckBox lan={"Hindi"}/>
-//               <CheckBox lan={"Tamil"}/>
-//               </div>
-//               </div>
-//               <div className="lanpage-btn">
-//               <Button/>
-//               </div>
-//             </ContentCon>
-//         </Body>
-//     </div>
-//   )
-// }
-
-// export default Lanpage
 
 const Lanpage = ({ onNext }) => {
   const[value,setValue]=useState(false);
+  const navigate=useNavigate()
+  const changeNext=()=>{
+    navigate('/login')
+  }
   return (
     <div>
       <Body>
@@ -48,7 +29,7 @@ const Lanpage = ({ onNext }) => {
           <div className="lanpage-btn">
             {
               value==="true"?
-              <Button text="Next" onClick={onNext} />:
+              <Button text="Next" onClick={changeNext} />:
               <></>
             }
           </div>

@@ -5,22 +5,37 @@ import ContentCon from '../components/utils/ContentCon';
 import CheckBox from '../components/utils/CheckBox';
 import Button from '../components/utils/Button';
 import './styles/Login.css';
+import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 const Login = ({ onNext, onPrev }) => {
+  const[value,setValue]=useState(false);
+  const navigate=useNavigate();
+  const [curValue,setcurValue]=useState("");
+  const changeNext=()=>{
+    navigate(curValue)
+  }
+  const changeBack=()=>{
+    navigate('/')
+  }
   return (
     <div>
-      <Body onPrev={onPrev}>
+      <Body onPrev={changeBack}>
         <Text text={"How do you want to login?"} />
         <ContentCon>
           <div className="content-section">
             <div className="card-content">
-              <CheckBox lan={"Register me as a new user"}/>
-              <CheckBox lan={"Use my phone number"} />
-              <CheckBox lan={"Use my Yojana Card"} />
+              <CheckBox lan={"Register me as a new user"} name={"/location"} setcurValue={setcurValue} change={value} setValue={setValue}/>
+              <CheckBox lan={"Use my phone number"} name={"/otp"} change={value} setValue={setValue} setcurValue={setcurValue}  />
+              <CheckBox lan={"Use my Yojana Card"} change={value} setValue={setValue} />
             </div>
           </div>
           <div className="lanpage-btn">
-            <Button text="Next" onClick={onNext} link={"/login"}/>
+            {
+              value==="true"?
+              <Button text="Next" onClick={changeNext} />:
+              <></>
+            }
           </div>
         </ContentCon>
       </Body>

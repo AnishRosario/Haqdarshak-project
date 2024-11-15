@@ -32,7 +32,7 @@ const MapScreen = () => {
 
   return (
     <div style={{ position: "relative" }}>
-      <LoadScript googleMapsApiKey={process.env.api_key}>
+      <LoadScript googleMapsApiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
         <GoogleMap
           mapContainerStyle={containerStyle}
           center={center}
@@ -72,7 +72,7 @@ const MapScreen = () => {
             fontSize: "16px",
             cursor: "pointer",
           }}
-          onClick={() => alert(Location Selected:\nLat: ${markerPosition.lat}\nLng: ${markerPosition.lng})}
+          onClick={() => alert(`Location Selected:\nLat: ${markerPosition.lat}\nLng: ${markerPosition.lng}`)}
         >
           Proceed
         </button>
